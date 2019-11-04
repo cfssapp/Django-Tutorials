@@ -6,4 +6,4 @@ python -m django --version
 
 django-admin
 
-django-admin startproject DjangoTutorials
+django-admin startproject DjangoTutorials .
