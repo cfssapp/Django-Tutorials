@@ -2,4 +2,8 @@
 
 pip install django
 
-python -m django
+python -m django --version
+
+django-admin
+
+django-admin startproject DjangoTutorials
