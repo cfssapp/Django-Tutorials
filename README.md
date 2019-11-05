@@ -8,10 +8,12 @@ django-admin
 
 django-admin startproject django_project .
 
-
 python manage.py runserver
 
 
 # 02-Application-And-Routes
 
 python manage.py startapp blog
+
+
+# 03-Templates
