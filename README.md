@@ -39,3 +39,20 @@ from django.contrib.auth.models import User
 User.objects.all()
 
 User.objects.first()
+
+User.objects.filter(username='Admin')
+
+User.objects.filter(username='Admin').first()
+user = User.objects.filter(username='Admin').first()
+
+user
+user.id
+user.pk
+
+user = User.objects.get(id=2)
+
+
+Post.objects.all()
+
+post_1 = Post(title='Blog 1', content='First Post Content!', author=user)
+post_1.save()
