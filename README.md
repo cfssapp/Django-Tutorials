@@ -19,3 +19,5 @@ python manage.py startapp blog
 # 03-Templates
 
 # 04-Admin-Page
+
+python manage.py createsuperuser
