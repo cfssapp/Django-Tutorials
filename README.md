@@ -25,3 +25,5 @@ python manage.py createsuperuser
 python manage.py makemigrations
 
 python manage.py migrate
+
+# 05-Database-Models
