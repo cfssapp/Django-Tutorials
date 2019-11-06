@@ -27,3 +27,15 @@ python manage.py makemigrations
 python manage.py migrate
 
 # 05-Database-Models
+
+python manage.py sqlmigrate blog 0001
+
+python manage.py shell
+
+from blog.models import Post
+
+from django.contrib.auth.models import User
+
+User.objects.all()
+
+User.objects.first()
