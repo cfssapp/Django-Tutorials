@@ -21,3 +21,7 @@ python manage.py startapp blog
 # 04-Admin-Page
 
 python manage.py createsuperuser
+
+python manage.py makemigrations
+
+python manage.py migrate
