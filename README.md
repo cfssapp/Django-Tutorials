@@ -77,8 +77,4 @@ user.post_set.create(title='Blog 3', content='Third Post Content!')
 
 python manage.py startapp users
 
-message.debug
-message.info
-message.success
-message.warning
-message.error
+pip install django-crispy-forms
