@@ -74,3 +74,11 @@ user.post_set.all()
 user.post_set.create(title='Blog 3', content='Third Post Content!')
 
 # 06-User-Registration-Form
+
+python manage.py startapp users
+
+message.debug
+message.info
+message.success
+message.warning
+message.error
