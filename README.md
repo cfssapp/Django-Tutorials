@@ -80,3 +80,5 @@ python manage.py startapp users
 pip install django-crispy-forms
 
 # 07-Login-Logout-Authentication
+
+# 08-Profile-And-Images
