@@ -78,3 +78,5 @@ user.post_set.create(title='Blog 3', content='Third Post Content!')
 python manage.py startapp users
 
 pip install django-crispy-forms
+
+# 07-Login-Logout-Authentication
