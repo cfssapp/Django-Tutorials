@@ -56,3 +56,19 @@ Post.objects.all()
 
 post_1 = Post(title='Blog 1', content='First Post Content!', author=user)
 post_1.save()
+
+post_2 = Post(title='Blog 2', content='Second Post Content!', author_id=user.id)
+post_2.save()
+
+post = Post.objects.first()
+post.content
+post.date_posted
+post.author
+post.author.email
+post.author.id
+
+.modelname_set
+
+user.post_set.all()
+
+user.post_set.create(title='Blog 3', content='Third Post Content!')
