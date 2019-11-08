@@ -82,3 +82,20 @@ pip install django-crispy-forms
 # 07-Login-Logout-Authentication
 
 # 08-Profile-And-Images
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+python manage.py shell
+
+from django.contrib.auth.models import User
+
+user = User.objects.filter(username='Admin').first()
+user
+user.profile
+user.profile.image
+user.profile.image.width
+user.profile.image.url
+
+user = User.objects.filter(username='user').first()
