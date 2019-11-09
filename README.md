@@ -103,3 +103,5 @@ user = User.objects.filter(username='user').first()
 # 09-Update-User-Profile
 
 # 10-Posts-Create-Update-Delete
+
+# 11-Pagination
