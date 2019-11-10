@@ -105,3 +105,38 @@ user = User.objects.filter(username='user').first()
 # 10-Posts-Create-Update-Delete
 
 # 11-Pagination
+
+python manage.py shell
+
+import json
+
+from blog.models import Post
+
+with open('posts.json') as f:
+     posts_json = json.load(f)
+
+for post in posts_json:
+post = Post(title=post['title'], content=post['content'], author_id=post['user_id'])
+post.save()
+
+from django.core.paginator import Paginator
+
+posts = ['1','2','3','4','5']
+
+p = Paginator(posts, 2)
+
+p.num_pages
+
+for page in p.page_range:
+print(page)
+
+p1 = p.page(1)
+
+p1
+p1.number
+p1.object_list
+
+p1.has_previous()
+p1.has_next()
+
+p1.next_page_number()
